@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Playfair Display' !important;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.izquierda,
+.derecha {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.izquierda {
+    background-color: #ffffff;
+}
+
+.derecha {
+    background-color: #e0e0e0e0;
+    left: 50%;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+.logo,
+.next {
+    position: absolute;
+    padding: 10px;
+    line-height: 80px;
+}
+
+.watch,
+.carrito {
+    position: absolute;
+    line-height: 80px;
+    padding: 10px;
+    right: 0;
+}
+
+.logo {
+    padding: 10px 80px 10px 60px;
+    background-color: #e0e0e0e0;
+}
+
+.next {
+    left: 280px;
+    position: absolute;
+    top: 1.6rem;
+    font-size: 24px;
+}
+
+.watch {
+    right: 220px;
+    font-family: 'Helvetica';
+    color: gray;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.carrito {
+    right: 70px;
+    font-size: 18px;
+    top: 1.8rem;
+}
+
+.sidebarDerecha {
+    right: 80px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    text-align: right;
+}
+
+.sidebarDerecha ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.titulo {
+    font-size: 36px;
+    font-family: 'Playfair Display';
+    padding-bottom: 40px;
+}
+
+.sidebarDerecha li:not(:first-child) {
+    padding: 6px 0;
+}
+
+.sidebarIzquierda {
+    position: absolute;
+    left: 60px;
+    top: 46%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    text-align: left;
+    width: 26%;
+}
+
+.sidebarIzquierda button {
+    padding: 24px 48px;
+    background: #101010;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    margin: 1em 0;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+.sidebarIzquierda p {
+    font-family: 'Helvetica';
+    font-weight: lighter;
+    line-height: 24px;
+    color: grey;
+}
+
+#precio {
+    color: #000;
+}
+
+.producto {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: fly 3s ease-in-out infinite;
+    -webkit-animation: fly 3s ease-in-out infinite;
+}
+
+.producto img {
+    width: 600px;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-50%, -46%);
+        -webkit-transform: translate(-50%, -46%);
+        -moz-transform: translate(-50%, -46%);
+        -ms-transform: translate(-50%, -46%);
+        -o-transform: translate(-50%, -46%);
+    }
+
+    50% {
+        transform: translate(-50%, -54%);
+        -webkit-transform: translate(-50%, -54%);
+        -moz-transform: translate(-50%, -54%);
+        -ms-transform: translate(-50%, -54%);
+        -o-transform: translate(-50%, -54%);
+    }
+
+    100% {
+        transform: translate(-50%, -46%);
+        -webkit-transform: translate(-50%, -46%);
+        -moz-transform: translate(-50%, -46%);
+        -ms-transform: translate(-50%, -46%);
+        -o-transform: translate(-50%, -46%);
+    }
+}
+
+.abajoIzquierda {
+    position: absolute;
+    left: 60px;
+    bottom: 40px;
+    font-family: 'Helvetica';
+    letter-spacing: 3px;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.media {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+}
+
+.media ul {
+    list-style: none;
+}
+
+.media ul li {
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.media ul li:not(:last-child) {
+    padding-right: 40px;
+
+}
